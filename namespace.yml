@@ -2,6 +2,6 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: cleanCodeNamspace
+  name: testnamespace
   labels:
-    name: cleanCodeNamspace
+    name: testnamespace
