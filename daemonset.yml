@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: testdaemonset
+  namespace: testnamespace
+spec:
+    spec:
+      containers:
+        - name: nginx
+          image: "nginx:1.11.1-alpine"
+          ports:
+             - containerPort: 80
