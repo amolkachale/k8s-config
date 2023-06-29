@@ -5,6 +5,9 @@ metadata:
   name: testpod
   namespace: testnamespace
 spec:
+  metadata:
+    labels:
+      app: testapp
   containers:
     - name: testcontainer
       image: nginx:1.14.2
