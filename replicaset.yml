@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -15,7 +16,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: testpod
-        image: image: nginx:1.14.2
-        ports:
-          - containerPort: 80
+        - name: testpod
+          image: nginx:1.14.2
+          ports:
+            - containerPort: 80
