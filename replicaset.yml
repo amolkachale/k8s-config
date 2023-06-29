@@ -4,16 +4,16 @@ kind: ReplicaSet
 metadata:
   name: testreplicaset
   labels:
-    tier: frontend
+    app: testapp
 spec:
   replicas: 4
   selector:
     matchLabels:
-      tier: frontend
+      app: testapp
   template:
     metadata:
       labels:
-        tier: frontend
+        app: testapp
     spec:
       containers:
         - name: testpod
