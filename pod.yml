@@ -1,13 +1,10 @@
 ---
-apiVersion: app/v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: testpod
   namespace: testnamespace
 spec:
-  metadata:
-    labels:
-      app: testapp
   containers:
     - name: testcontainer
       image: nginx:1.14.2
